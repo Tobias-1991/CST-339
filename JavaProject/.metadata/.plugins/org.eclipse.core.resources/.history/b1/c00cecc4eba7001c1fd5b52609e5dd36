@@ -1,0 +1,7 @@
+<html layout:decorate="layouts/defaultLayout">
+
+<div layout:fragment="content">
+	<h1>Hello</h1>
+</div>
+
+</html>

@@ -806,3 +806,57 @@ java.lang.NullPointerException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-19 21:47:24.410
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.whnivggu => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:42.198
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:42.199
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@75026497[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=561)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:42.199
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.279
+!MESSAGE Boot LS startup time from start to initialized: 2078ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.353
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QZkNjJMyisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.353
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.353
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.353
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.353
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.354
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.QZkNjJMy => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.360
+!MESSAGE classpath=79 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.360
+!MESSAGE buffering callback sts4.classpath.QZkNjJMy JavaProject false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.360
+!MESSAGE executing callback sts4.classpath.QZkNjJMy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:38:44.724
+!MESSAGE executing callback sts4.classpath.QZkNjJMy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:39:48.544
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QZkNjJMy
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:39:48.545
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.QZkNjJMy
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:39:48.546
+!MESSAGE subsribers = {sts4.classpath.xjlkXxjk=Send Classpath Notifications(156)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-20 13:39:48.546
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QZkNjJMy => OK

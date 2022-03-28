@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMG</title>
+    
+    <!-- Bootsrap link -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Press Start Font from Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+  	<!-- HEADER -->
+  	<div th:replace="layouts/header :: header"></div >
+  	
+  	<!-- CONTENT -->
+  	<section layout:fragment="content" style="margin-top:20px;">
+  	<div>
+  	<br></br>
+  	<br></br>
+  	<h1 style="text-align:center;">Add a new Product</h1>
+  	</div>
+  	<form class="container box justify-content-center" action="#" th:action="@{addProduct}" th:object="${ProductModel}" method="post">
+   		<a class="navbar-brand text-dark" href="#"></a>
+            <div class="row justify-content-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+	            <input class="form-control" type="text" name="productName" placeholder="Product Name">
+	            <input class="form-control" type="text"name="cost" placeholder="Product Cost">
+	            <input class="form-control" type="text" name="retailPrice" placeholder="Retail Price">
+	            <input class="form-control" type="text" name="location" placeholder="File Location"><br>
+	            <input class="btn btn-outline-success btn-lg mb-3" type="submit" name="add" value="Add Product">
+	            </div>
+                <div class="col-1"></div>
+            </div>
+ 		</form>
+  	
+  	</section>
+  	
+  	<!-- FOOTER -->
+  	<div th:replace="layouts/footer :: footer"></div >
+	<script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<html layout:decorate="layouts/defaults/defaultLayout">
+
+<main layout:fragment="content" class="bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<h5 class="text-uppercase">CONSOLES FROM <span th:text="${brand}">BRAND</span></h5>
+				<nav style="--bs-breadcrumb-divider: '>';" class="row">
+					<ol class="breadcrumb text-uppercase text-dark px-5">
+						<li class="breadcrumb-item">
+							<a class="text-reset" href="/">HOME</a>
+						</li>
+						<li th:text="${brand}" class="breadcrumb-item active">
+							BRAND
+						</li>
+					</ol>
+				</nav>
+				<span th:switch="${brand}">
+				<div th:case="nintendo" class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-2">
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/nintendo.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">NES</h5>
+								<a href="/products/nintendo/nes" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/nintendo.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Nintendo 64</h5>
+								<a href="/products/nintendo/nintendo_64" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/nintendo.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">GameCube</h5>
+								<a href="/products/nintendo/gamecube" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/nintendo.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Wii</h5>
+								<a href="/products/nintendo/wii" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/nintendo.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Wii U</h5>
+								<a href="/products/nintendo/wii_u" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div th:case="sega" class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-2">
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/sega.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">SG-1000</h5>
+								<a href="/products/sega/sg-1000" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/sega.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Genesis</h5>
+								<a href="/products/sega/genesis" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/sega.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">32X</h5>
+								<a href="/products/sega/32x" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/sega.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Saturn</h5>
+								<a href="/products/sega/saturn" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/sega.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Dreamcast</h5>
+								<a href="/products/sega/dreamcast" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div th:case="playstation" class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-2">
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/playstation.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">NES</h5>
+								<a href="/products/playstation/playstation" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/playstation.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">PS One</h5>
+								<a href="/products/playstation/ps_one" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/playstation.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">PlayStation 2</h5>
+								<a href="/products/playstation/playstation_2" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/playstation.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">PlayStation 3</h5>
+								<a href="/products/playstation/playstation_3" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div th:case="xbox" class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-2">
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/xbox.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top" alt="Nintendo Logo">
+							<div class="card-body">
+								<h5 class="card-title">Xbox</h5>
+								<a href="/products/xbox/xbox" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm text-center">
+							<img src="/img/xbox.png" style="object-fit: contain; height:12rem; width:100%;"
+								class="card-img-top" alt="Nintendo Logo">
+							<div class="card-body">
+								<h5 class="card-title">Xbox 360</h5>
+								<a href="/products/xbox/xbox_360" class="btn btn-outline-info">View Products</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div th:case="*" class="text-center">
+					<h1>NO CATEGORY EXSITS</h1>
+				</div>
+				</span>
+			</div>
+		</div>
+	</div>
+</main>
+
+</html>

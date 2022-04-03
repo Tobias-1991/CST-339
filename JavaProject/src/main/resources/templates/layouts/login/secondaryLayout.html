@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title th:text ="${title}">Title Here</title>
+    
+    <!-- Bootsrap link -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Press Start Font from Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  </head>
+  
+  <body style="font-family:Monospace; font-size: 16px; background-color:#000000" class="d-flex flex-column min-vh-100">
+  	<!-- HEADER -->
+  	<div th:replace="layouts/login/secondHeader :: secondHeader"></div >
+  	
+  	<!-- CONTENT -->
+  	<section layout:fragment="content" style="margin-top:20px;">Needs content</section>
+  	
+	<script src="/js/bootstrap.min.js"></script>
+  </body>
+  
+  
+  
+</html>

@@ -1,4 +1,4 @@
-package com.smg.controllers;
+/*package com.smg.controllers;
 
 
 import javax.validation.Valid;
@@ -97,4 +97,4 @@ public class PageController {
 
 		return "index";
 	}
-}
+}*/

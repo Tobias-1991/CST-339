@@ -1,0 +1,118 @@
+<!--Mini Nav on very top-->
+<nav th:fragment="header" class="py-2" style="background-color:black">
+	<div class="container d-flex flex-wrap">
+		<ul class="nav me-auto">
+			<li class="nav-item"><a href="/" class="nav-link link-light px-2">Home</a></li>
+			<li class="nav-item"><a href="/products/all" class="nav-link link-light px-2">Browse</a></li>
+			<li class="nav-item"><a href="/faq" class="nav-link link-light px-2">FAQs</a></li>
+			<li class="nav-item"><a href="/about" class="nav-link link-light px-2">About Us</a></li>
+		</ul>
+		<ul class="nav">
+			<li class="nav-item"><a href="/account/login" class="nav-link link-light px-2">Login</a></li>
+			<li class="nav-item"><a href="/account/register" class="nav-link link-light px-2">Sign up</a></li>
+		</ul>
+	</div>
+</nav>
+<!--END: Mini Nav on very top-->
+<!--Brand Logo and products w/searchbar-->
+<!--START: offcanvas product nav -->
+<header class="py-3 mb-4">
+	<div class="container d-flex flex-wrap justify-content-center">
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+			aria-controls="offcanvasNavbar">
+			<span class="navbar-toggler-icon"><i class="bi bi-list text-light"></i></span>
+		</button>
+		<div class="offcanvas offcanvas-start" style="background-color: black;" tabindex="-1" id="offcanvasNavbar"
+			aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<button type="button" class="btn-close text-light fs-3" data-bs-dismiss="offcanvas"
+					aria-label="Close">X</button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+						<a class="nav-link text-light" aria-current="page" href="/products/nintendo">
+							<h3>Nintendo</h3>
+						</a>
+					</li>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/nintendo/nes">NES</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/nintendo/nintendo_64">Nintendo 64</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/nintendo/gamecube">GameCube</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/nintendo/wii">Wii</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/nintendo/wii_u">Wii U</a></li>
+					</ul>
+					<li class="nav-item">
+						<a class="nav-link text-light" aria-current="page" href="/products/sega">
+							<h3>Sega</h3>
+						</a>
+					</li>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/sega/sg-1000">SG-1000</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/sega/genesis">Genesis</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/sega/32x">32X</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/sega/saturn">Saturn</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/sega/dreamcast">Dreamcast</a></li>
+					</ul>
+					<li class="nav-item">
+						<a class="nav-link text-light" aria-current="page" href="/products/playstation">
+							<h3>PlayStation</h3>
+						</a>
+					</li>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/playstation/playstation">Playstation</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/playstation/ps_one">PS One</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/playstation/playstation_2">Playstation 2</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/playstation/playstation_3">Playstation 3</a></li>
+					</ul>
+					<li class="nav-item">
+						<a class="nav-link text-light" aria-current="page" href="/products/xbox">
+							<h3>Xbox</h3>
+						</a>
+					</li>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/xbox/xbox">Xbox</a></li>
+						<li class="list-group-item" style="background-color: black;"><a class="nav-link text-light"
+								href="/products/xbox/xbox_360">Xbox 360 </a></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+		<!--END: offcanvas product nav -->
+		<!--LOGO-->
+		<a href="/"
+			class="d-flex align-items-center mb-3 mb-lg-0 mt-3 mt-lg-0 me-lg-auto text-dark text-decoration-none">
+			<span class="fs-4" style="font-family: 'Press Start 2P', cursive; 
+			background: linear-gradient(to bottom, #f2be79 10%, #b06dd1 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1.5px;
+  			-webkit-text-stroke-color: black;">
+  			&nbsp;SMG GAMING
+  			</span>
+		</a>
+		<!--END: LOGO-->
+		<!-- Searchbar -->
+		<form class="col-12 col-lg-auto mb-3 mb-lg-0 mt-3 mt-lg-0">
+			<input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+		</form>
+		<!--END: Searchbar -->
+	</div>
+</header>
+
+<!-- Body and HTML tag continues on other pages -->

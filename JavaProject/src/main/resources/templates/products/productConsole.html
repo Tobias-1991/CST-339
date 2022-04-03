@@ -1,0 +1,50 @@
+<html layout:decorate="layouts/defaults/defaultLayout">
+
+<main layout:fragment="content" class="bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<h5 class="text-uppercase">GAMES FOR <span th:text="${brand}">BRAND</span>'s <span th:text="${console}">BRAND</span></h5>
+				<nav style="--bs-breadcrumb-divider: '>';" class="row">
+					<ol class="breadcrumb text-uppercase text-dark px-5">
+						<li class="breadcrumb-item">
+							<a class="text-reset" href="/">HOME</a>
+						</li>
+						<li class="breadcrumb-item" th:switch="${brand}">
+							<a th:case="nintendo"class="text-reset" href="/products/nintendo">NINTENDO</a>
+							<a th:case="sega"class="text-reset" href="/products/sega">SEGA</a>
+							<a th:case="playstation"class="text-reset" href="/products/playstation">PLAYSTATION</a>
+							<a th:case="xbox"class="text-reset" href="/products/xbox">XBOX</a>
+						</li>
+						<li th:text="${console}" class="breadcrumb-item active">
+							CONSOLE
+						</li>
+					</ol>
+				</nav>
+				<div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-2">
+					<!-- REPEAT THIS OVER FOR EACH PRODUCT -->
+					<div class="col">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body" style="height:15rem">
+								<div class="px-4 text-left">
+									<h5 class="card-title fw-bold">$24.99 </h5>
+									<h6 class="card-text">Product Long Game Title Under 50 Characters (Demo)</h6>
+									<small class="card-text text-uppercase" th:text="${brand}">PRODUCT BRAND</small>
+								</div>
+								<div class="text-center py-3">
+									<a href="#" class="btn mb-2 btn-sm btn-warning">Quick Add</a>
+									<a href="#" class="btn mb-2 btn-sm btn-info">Product Info</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- REPEAT THIS OVER FOR EACH PRODUCT -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+</html>

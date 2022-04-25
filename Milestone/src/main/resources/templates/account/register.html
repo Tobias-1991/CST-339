@@ -1,0 +1,40 @@
+<html layout:decorate="layouts/login/secondaryLayout">
+<div layout:fragment="content">
+  
+  <form class="container box justify-content-center text-light" action="#" th:action="@{/doRegistration}" th:object="${UserModel}" method="post">
+  <div class="row justify-content-center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                <h1 class="text-center">User Registration</h1>
+                <div class="mb-3">
+					<label class="form-label">Full Name</label>
+					<input class="form-control" type="text" name="name" th:field="*{name}" placeholder="Full Name">
+				</div>
+	          <div class="mb-3">
+					<label class="form-label">Email</label>
+					<input class="form-control" type="email"name="mail" th:field="*{email}" placeholder="Email">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Username</label>
+					<input class="form-control" type="text" name="username" th:field="*{username}" placeholder="Username">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Password</label>
+					<input class="form-control" type="password" name="password" th:field="*{password}" placeholder="Password">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Re-Type Password</label>
+					<input class="form-control" type="password" name="re-pass" th:field="*{passwordVerify}" placeholder="Re-Type Password">
+				</div>
+	            <div class="d-grid gap-2 col-6 mx-auto">
+	            	<input class="btn btn-outline-success btn-lg mb-3" type="submit" name="signup" value="Sign Up">
+	            </div>
+	            <p class="text-center fs-6">Already Registered? <a href="/account/login">Log In</a></p>
+	            </div>
+                <div class="col-1"></div>
+            </div>
+  </form>
+</div>
+
+</html>
+

@@ -1,0 +1,158 @@
+<html layout:decorate="layouts/defaults/defaultLayout">
+
+<main layout:fragment="content" class="bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<h5 class="text-uppercase">BROWSE PRODUCTS</h5>
+				<nav style="--bs-breadcrumb-divider: '>';" class="row">
+					<ol class="breadcrumb text-uppercase text-dark px-5">
+						<li class="breadcrumb-item">
+							<a class="text-reset" href="/">HOME</a>
+						</li>
+						<li class="breadcrumb-item active">
+							ALL
+						</li>
+					</ol>
+				</nav>
+				<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2">
+					<!-- REPEAT THIS OVER FOR EACH PRODUCT -->
+					<div class="col">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body">
+								<div class="px-4 text-left">
+									<h5 class="card-title fw-bold" th:text="${product.productRetailPrice}">$FREE</h5>
+									<h6 class="card-text"th:text="${product.productDescription}">This card has the item link under "Product info"</h6>
+									<small class="card-text text-uppercase" th:text="${product.productName}">Game Brand</small>
+								</div>
+								<div class="text-center py-3">
+									<a href="#" class="btn mb-2 btn-sm btn-warning">Quick Add</a>
+									<a href="/products/sample/sampleconsole/9000" class="btn mb-2 btn-sm btn-info">Product Info</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- REPEAT THIS OVER FOR EACH PRODUCT -->
+
+					<!--
+					<div class="col">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body">
+								<div class="px-4 text-left">
+									<h5 class="card-title fw-bold">$24.99 </h5>
+									<h6 class="card-text">Product Long Game Title Under 50 Characters (Demo)</h6>
+									<small class="card-text text-uppercase">Nintendo</small>
+								</div>
+								<div class="text-center py-3">
+									<a href="#" class="btn mb-2 btn-sm btn-warning">Quick Add</a>
+									<a href="#" class="btn mb-2 btn-sm btn-info">Product Info</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body">
+								<div class="px-4 text-left">
+									<h5 class="card-title fw-bold">$24.99 </h5>
+									<h6 class="card-text">Product Long Game Title Under 50 Characters (Demo)</h6>
+									<small class="card-text text-uppercase">Playstation</small>
+								</div>
+								<div class="text-center py-3">
+									<a href="#" class="btn mb-2 btn-sm btn-warning">Quick Add</a>
+									<a href="#" class="btn mb-2 btn-sm btn-info">Product Info</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body">
+								<div class="px-4 text-left">
+									<h5 class="card-title fw-bold">$24.99 </h5>
+									<h6 class="card-text">Product Long Game Title Under 50 Characters (Demo)</h6>
+									<small class="card-text text-uppercase">xbox</small>
+								</div>
+								<div class="text-center py-3">
+									<a href="#" class="btn mb-2 btn-sm btn-warning">Quick Add</a>
+									<a href="#" class="btn mb-2 btn-sm btn-info">Product Info</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body">
+								<div class="px-4 text-left">
+									<h5 class="card-title fw-bold">$24.99 </h5>
+									<h6 class="card-text">Product Long Game Title Under 50 Characters (Demo)</h6>
+									<small class="card-text text-uppercase">Playstation</small>
+								</div>
+								<div class="text-center py-3">
+									<a href="#" class="btn mb-2 btn-sm btn-warning">Quick Add</a>
+									<a href="#" class="btn mb-2 btn-sm btn-info">Product Info</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body">
+								<div class="px-4 text-left">
+									<h5 class="card-title fw-bold">$24.99 </h5>
+									<h6 class="card-text">Product Long Game Title Under 50 Characters (Demo)</h6>
+									<small class="card-text text-uppercase">xbox</small>
+								</div>
+								<div class="text-center py-3">
+									<a href="#" class="btn mb-2 btn-sm btn-warning">Quick Add</a>
+									<a href="#" class="btn mb-2 btn-sm btn-info">Product Info</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body">
+								<div class="px-4 text-left">
+									<h5 class="card-title fw-bold">$24.99 </h5>
+									<h6 class="card-text">Product Long Game Title Under 50 Characters (Demo)</h6>
+									<small class="card-text text-uppercase">Nintendo</small>
+								</div>
+								<div class="text-center py-3">
+									<a href="#" class="btn mb-2 btn-sm btn-warning">Quick Add</a>
+									<a href="#" class="btn mb-2 btn-sm btn-info">Product Info</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="..." class="card-img-top" alt="...">
+							<div class="card-body">
+								<div class="px-4 text-left">
+									<h5 class="card-title fw-bold">$24.99 </h5>
+									<h6 class="card-text">Product Long Game Title Under 50 Characters (Demo)</h6>
+									<small class="card-text text-uppercase">Nintendo</small>
+								</div>
+								<div class="text-center py-3">
+									<a href="#" class="btn mb-2 btn-sm btn-warning">Quick Add</a>
+									<a href="#" class="btn mb-2 btn-sm btn-info">Product Info</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					 Placeholders for multiple products, can delete -->
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+</html>

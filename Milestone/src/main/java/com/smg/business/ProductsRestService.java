@@ -24,19 +24,20 @@ public class ProductsRestService {
 	private ProductBusinessInterface service;
 	
 	@GetMapping(path="/getjson", produces= {MediaType.APPLICATION_JSON_VALUE})
-	public List<ProductModel> getOrdersAsJson() {
+	public List<ProductModel> getProductsAsJson() {
 		return service.getProducts();
 	}
 	
 	@GetMapping(path="/getxml", produces= {MediaType.APPLICATION_XML_VALUE})
-	public ProductListModel getOrdersAsXml() {
+	public ProductListModel getProductsAsXml() {
 		ProductListModel list = new ProductListModel();
 		list.setProducts(service.getProducts());
 		return list;
+		
 	}
 	
-	@GetMapping(path="/getorder/{id}")
-	public ResponseEntity<?> getOrder(@PathVariable("id") String id) {
+	@GetMapping(path="/getproduct/{id}")
+	public ResponseEntity<?> getProduct(@PathVariable("id") String id) {
 		
 		try {
 			ProductModel product = service.getProductById(id);

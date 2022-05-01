@@ -1,26 +1,27 @@
-package com.smg.controller;
+/*package com.smg.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-
 import org.springframework.web.bind.annotation.GetMapping;
-
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
 import com.smg.business.ProductBusinessInterface;
 import com.smg.data.DataAccessInterface;
+import com.smg.model.ProductModel;
+import com.smg.model.UserModel;
 
 @Controller
 @RequestMapping("/")
 public class SMGPageController {
 	
 	@Autowired
-	//DataAccessInterface<UserModel> access;
-	DataAccessInterface<com.smg.model.ProductModel> productAccess;
+	DataAccessInterface<UserModel> access;
+	@Autowired
+	DataAccessInterface<ProductModel> productAccess;
+	
 	private ProductBusinessInterface productInterface;
 	
 
@@ -58,7 +59,7 @@ public class SMGPageController {
 		return "user-login-success";
 	}
 	
-		/*@GetMapping("/account/addProduct")
+		@GetMapping("/account/addProduct")
 		public String goAddProducts(WebRequest request, Model model) {
 			ProductModel productModel = new ProductModel();
 			model.addAttribute("title", "SMG GAMING ADMIN | Add Products");
@@ -108,7 +109,7 @@ public class SMGPageController {
 				return mav;
 			}
 			return new ModelAndView("/user-login-success", "UserModel", userModel);
-		}*/
+		}
 		
 		@GetMapping("/register/success")
 		public String registerSuccess() {
@@ -199,4 +200,4 @@ public class SMGPageController {
 			return "products/productItem";
 		}
 		
-}
+}*/

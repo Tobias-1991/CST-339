@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.smg.data.ProductDataService;
 import com.smg.data.entity.ProductsEntity;
@@ -13,6 +14,9 @@ public class ProductBusinessService implements ProductBusinessInterface {
 	
 	@Autowired
 	ProductDataService productService;
+	
+	@Autowired
+	public BCryptPasswordEncoder encode;
 
 	@Override
 	public void test() {
@@ -24,6 +28,7 @@ public class ProductBusinessService implements ProductBusinessInterface {
 	public void init() {
 		// TODO Auto-generated method stub
 		System.out.println("Hello from the Product Business Service Init Method");
+		System.out.println(encode.encode("test"));
 	}
 
 	@Override

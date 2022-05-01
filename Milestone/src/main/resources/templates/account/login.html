@@ -1,7 +1,7 @@
 <html layout:decorate="layouts/login/secondaryLayout">
 <div layout:fragment="content">
 
-	<form class="container box justify-content-center text-light" action="#"  method="post">
+	<form class="container box justify-content-center text-light" th:action="@{/login}"  method="post">
 		<div class="row justify-content-center">
 
 			<div class="col-1"></div>
@@ -9,11 +9,11 @@
 				<h1 class="text-center">Customer Login</h1>
 				<div class="mb-3">
 					<label class="form-label">Username</label>
-					<input type="text" class="form-control" placeholder="username">
+					<input type="text" class="form-control" name="username" id="username" placeholder="username">
 				</div>
 				<div class="mb-3">
 					<label class="form-label">Password</label>
-					<input type="password" class="form-control" placeholder="password">
+					<input type="password" class="form-control" id="password" placeholder="password">
 				</div>
 				<div class="d-grid gap-2 col-6 mx-auto">
 					<input class="btn btn-outline-success btn-lg mb-3 float-right" type="submit" value="Login">

@@ -2,19 +2,14 @@
 <nav th:fragment="header" class="py-2" style="background-color:black">
 	<div class="container d-flex flex-wrap">
 		<ul class="nav me-auto">
-			<li class="nav-item"><a href="/" class="nav-link link-light px-2">Home</a></li>
-			<li class="nav-item"><form th:action="@{/viewProducts}" method="post">
-			<input class="nav-link  px-2" type="submit" value="Browse" />
-			</form></li>
+			<li class="nav-item"><a href="/home" class="nav-link link-light px-2">Home</a></li>			
 			<li class="nav-item"><a href="/faq" class="nav-link link-light px-2">FAQs</a></li>
 			<li class="nav-item"><a href="/about" class="nav-link link-light px-2">About Us</a></li>
 		</ul>
 		<ul class="nav">
-			<li class="nav-item"><a href="/account/userAccount" class="nav-link link-light px-2">Account</a></li>
-			<li class="nav-item"><a href="/account/addProduct" class="nav-link link-light px-2">Add New Product</a></li>
-			<li class="nav-item"><form th:action="@{/logout}" method="post">
-			<input class="nav-link  px-2" type="submit" value="Logout" />
-			</form></li>
+			<li class="nav-item"><a href="/account" class="nav-link link-light px-2">Account</a></li>
+			<li class="nav-item"><a href="/products/newProduct" class="nav-link link-light px-2">Add New Product</a></li>
+			<li class="nav-item"><a href="/logout" class="nav-link link-light px-2">Logout</a></li>
 		</ul>
 	</div>
 </nav>

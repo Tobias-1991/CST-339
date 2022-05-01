@@ -17,6 +17,7 @@ public class ProductModel {
 		this.cost = cost;
 		this.quantity = quantity;
 	}
+	public ProductModel() {}
 	
 	public String getId() {
 		return id;

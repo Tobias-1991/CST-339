@@ -9,4 +9,5 @@ import com.smg.data.entity.UserEntity;
 public interface UsersRepository extends MongoRepository<UserEntity, String> {
 	
 	UserEntity findByUsername(String username);
+	Boolean existsByUsername(String username);
 }

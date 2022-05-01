@@ -23,12 +23,12 @@ public class ProductsEntity {
 		return id;
 	}
 
-	public ProductsEntity(String id, String productNo, String productName, float price, int quantity) {
+	public ProductsEntity(String id, String productNo, String productName, float cost, int quantity) {
 		super();
 		this.id = id;
 		this.productNo = productNo;
 		this.productName = productName;
-		this.cost = price;
+		this.cost = cost;
 		this.quantity = quantity;
 	}
 

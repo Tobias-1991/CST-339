@@ -27,19 +27,19 @@ public class UserDataService implements UsersDataAccessInterface<UserEntity>, Da
 	}
 
 	@Override
-	public boolean create(UserEntity t) {
+	public boolean create(UserEntity user) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean update(UserEntity t) {
+	public boolean update(UserEntity user) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean delete(UserEntity t) {
+	public boolean delete(UserEntity user) {
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -47,7 +47,7 @@ public class UserDataService implements UsersDataAccessInterface<UserEntity>, Da
 	@Override
 	public UserEntity findByUsername(String username) {
 		// TODO Auto-generated method stub
-		return null;
+		return usersRepository.findByUsername(username);
 	}
 	
 

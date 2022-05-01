@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.smg"},{"l":"com.smg.business"},{"l":"com.smg.controller"},{"l":"com.smg.data"},{"l":"com.smg.data.entity"},{"l":"com.smg.data.repository"},{"l":"com.smg.model"}];updateSearchResults();
